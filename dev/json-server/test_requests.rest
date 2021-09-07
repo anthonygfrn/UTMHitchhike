@@ -1,0 +1,49 @@
+### For Testing
+
+### Change the IP address below to your PC's IP address
+@baseUrl = http://192.168.1.6:3000
+
+### Request 1 : Get a user whose correct 'login' and 'password'
+### Purpose   : To simulate the authentication process. 
+GET {{baseUrl}}/users?login=alex&password=123
+
+
+{
+    "user": 2,
+    "counter": 2
+}
+
+
+### Request 4 : 
+### Purpose   : 
+GET {{baseUrl}}/rides?user=1
+
+### Request 5 : 
+### Purpose   : 
+GET {{baseUrl}}/todos?user=1
+
+### Request 6 : 
+### Purpose   : 
+GET {{baseUrl}}/rides?destination=3
+
+### Request 6 : 
+### Purpose   : 
+GET {{baseUrl}}/users?id=2
+
+### Request 6 : 
+### Purpose   : 
+GET {{baseUrl}}/locations?id=2
+
+###
+GET  {{baseUrl}}/rides?id=2
+
+###
+GET  {{baseUrl}}/rides/120
+
+###
+PATCH {{baseUrl}}/rides/134
+Content-Type: application/json
+
+{
+    "passenger": 1
+}
